@@ -70,14 +70,25 @@ public class Start {
         int num = entrada; // "entrada" sera el valor a utilizar como número para hallar el factorial, se guarda en la variable num. 
         int error = -1;
         
-        while (num != 0) { // Mientras que num sea distinto de 0 se ejecutará la instrucción.
-            resultado=resultado*num;
-            num--; // En cada paso por esta instrucción se descontará 1 a la variable num.
-        }   
+        //while (num != 0) { // Mientras que num sea distinto de 0 se ejecutará la instrucción.
+        //    resultado=resultado*num;
+        //    num--; // En cada paso por esta instrucción se descontará 1 a la variable num.
+        //}   
         
+		/*
+		CORRECCIÓN, EN LA ZONA COMENTADA ARRIBA HAY UN BUCLE INNECESARIO DEBIDO A QUE YA EL IF CONTROLA LA ENTRADA DE UN NUMERO INCORRECTO
+		EL BUCLE WHILE TIENE SENTIDO EN EL ELSE, PERO NO FUERA DE EL.
+		*/	
+
         if (entrada <= 0) {
         	return error;
         } else {
+
+			while (num != 0) { // Mientras que num sea distinto de 0 se ejecutará la instrucción.
+				resultado=resultado*num;
+				num--; // En cada paso por esta instrucción se descontará 1 a la variable num.
+			}
+			
         	return resultado;
         }
     }
