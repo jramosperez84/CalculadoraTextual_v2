@@ -67,8 +67,8 @@ public class Start {
 	public static int factorial (int entrada) {
         
 		int resultado = 1;
-        int num = entrada; // "entrada" sera el valor a utilizar como número para hallar el factorial, se guarda en la variable num. 
-        int error = -1;
+        	int num = entrada; // "entrada" sera el valor a utilizar como número para hallar el factorial, se guarda en la variable num. 
+        	int error = -1;
         
         //while (num != 0) { // Mientras que num sea distinto de 0 se ejecutará la instrucción.
         //    resultado=resultado*num;
@@ -80,9 +80,9 @@ public class Start {
 		EL BUCLE WHILE TIENE SENTIDO EN EL ELSE, PERO NO FUERA DE EL.
 		*/	
 
-        if (entrada <= 0) {
-        	return error;
-        } else {
+		if (entrada <= 0) {
+			return error;
+		} else {
 
 			while (num != 0) { // Mientras que num sea distinto de 0 se ejecutará la instrucción.
 				resultado=resultado*num;
